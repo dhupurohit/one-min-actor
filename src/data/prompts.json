@@ -1,0 +1,102 @@
+[
+  {
+    "situation": "Talking to your best friend after a fight",
+    "emotion": "hurt",
+    "line": "I didn’t expect this from you…"
+  },
+  {
+    "situation": "You lied to someone",
+    "emotion": "guilt",
+    "line": "I didn’t mean to lie…"
+  },
+  {
+    "situation": "You achieved something big",
+    "emotion": "proud",
+    "line": "I actually did it."
+  },
+  {
+    "situation": "You feel ignored",
+    "emotion": "sad",
+    "line": "I was there… you just didn’t see me."
+  },
+  {
+    "situation": "Someone surprised you",
+    "emotion": "happy",
+    "line": "Wait… really? This is for me?"
+  },
+  {
+    "situation": "You are scared at night",
+    "emotion": "fear",
+    "line": "Did you hear that?"
+  },
+  {
+    "situation": "You are angry at a friend",
+    "emotion": "angry",
+    "line": "Why would you do that?"
+  },
+  {
+    "situation": "Motivating yourself",
+    "emotion": "strong",
+    "line": "No, I can’t give up now."
+  },
+  {
+    "situation": "Missing someone",
+    "emotion": "lonely",
+    "line": "It just feels empty without you."
+  },
+  {
+    "situation": "Exciting news",
+    "emotion": "excited",
+    "line": "I got it! I actually got it!"
+  },
+  {
+    "situation": "Apologizing deeply",
+    "emotion": "regret",
+    "line": "I wish I could take it back."
+  },
+  {
+    "situation": "Standing up for yourself",
+    "emotion": "confident",
+    "line": "No, this time I won’t stay quiet."
+  },
+  {
+    "situation": "Feeling confused in life",
+    "emotion": "confused",
+    "line": "I don’t know what I’m doing anymore."
+  },
+  {
+    "situation": "Talking to a stranger",
+    "emotion": "nervous",
+    "line": "Hi… I just wanted to ask something."
+  },
+  {
+    "situation": "Celebrating with friends",
+    "emotion": "joy",
+    "line": "This is the best day ever!"
+  },
+  {
+    "situation": "Disappointed in yourself",
+    "emotion": "sad",
+    "line": "I thought I could do better."
+  },
+  {
+    "situation": "Being proud of someone",
+    "emotion": "warm",
+    "line": "You did really well."
+  },
+  {
+    "situation": "Someone betrayed you",
+    "emotion": "angry",
+    "line": "After everything… this is what you did?"
+  },
+  {
+    "situation": "Trying to convince someone",
+    "emotion": "serious",
+    "line": "Just trust me this once."
+  },
+  {
+    "situation": "Talking to your future self",
+    "emotion": "hopeful",
+    "line": "I hope you made it."
+  }
+]

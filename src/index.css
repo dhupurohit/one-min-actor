@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+/* ===== BASE ===== */
+body {
+  @apply bg-[#f9fafb] text-gray-800;
+  font-family: system-ui, sans-serif;
+}
+
+/* ===== LAYOUT ===== */
+.app-container {
+  @apply min-h-screen flex flex-col items-center px-4 py-6;
+}
+
+.app-title {
+  @apply text-2xl font-semibold mb-1;
+}
+
+.app-subtitle {
+  @apply text-sm text-gray-500 mb-4;
+}
+
+.card-container {
+  @apply w-full max-w-md mt-4;
+}
+
+/* ===== MODE SELECTOR ===== */
+.mode-wrapper {
+  @apply flex bg-gray-200 p-1 rounded-full;
+}
+
+.mode-btn {
+  @apply px-4 py-1 rounded-full text-sm transition text-gray-500;
+}
+
+.mode-active {
+  @apply bg-white shadow text-gray-800;
+}
+
+/* ===== CARD ===== */
+.card {
+  @apply bg-white rounded-2xl shadow p-5 text-center transition-all duration-200;
+}
+
+.label {
+  @apply text-xs text-gray-400 mb-1;
+}
+
+.text-main {
+  @apply text-gray-700 mb-3;
+}
+
+.text-highlight {
+  @apply text-purple-600 font-medium mb-3;
+}
+
+.text-line {
+  @apply text-lg text-gray-800 italic;
+}
+
+/* ===== BUTTON ===== */
+.btn-primary {
+  @apply mt-5 w-full py-2 rounded-xl bg-purple-500 text-white font-medium active:scale-95 transition;
+}
+
+/* ===== EMOTION TAGS ===== */
+.tag {
+  @apply px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm;
+}
+
+/* ACTIVE TAG */
+.tag-active {
+  @apply bg-purple-500 text-white scale-105 shadow;
+}

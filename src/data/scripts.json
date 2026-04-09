@@ -1,0 +1,92 @@
+[
+  {
+    "movie": "Jab We Met",
+    "context": "Energetic self-expression",
+    "lines": [
+      "Main apni favorite hoon!",
+      "Jo main bolti hoon woh main karti hoon.",
+      "Mujhe khud pe poora trust hai."
+    ]
+  },
+  {
+    "movie": "Jab We Met",
+    "context": "Emotional vulnerability",
+    "lines": [
+      "Mujhe samajh nahi aa raha main kya karun.",
+      "Sab kuch itna complicated kyun hai?",
+      "Main thak gayi hoon."
+    ]
+  },
+  {
+    "movie": "Dear Zindagi",
+    "context": "Life confusion",
+    "lines": [
+      "What if I choose wrong?",
+      "What if I regret it later?",
+      "How do I know what’s right?"
+    ]
+  },
+  {
+    "movie": "Dear Zindagi",
+    "context": "Self-realization",
+    "lines": [
+      "Maybe I’m the problem.",
+      "Or maybe I just don’t understand myself yet.",
+      "I need time."
+    ]
+  },
+  {
+    "movie": "Kalank",
+    "context": "Love and pain",
+    "lines": [
+      "Yeh pyaar itna mushkil kyun hai?",
+      "Dil maanta hi nahi.",
+      "Main kya karun?"
+    ]
+  },
+  {
+    "movie": "Kalank",
+    "context": "Emotional confrontation",
+    "lines": [
+      "Aapne kabhi samjha hi nahi mujhe.",
+      "Main sirf sach keh rahi hoon.",
+      "Aur sach dard deta hai."
+    ]
+  },
+  {
+    "movie": "Bajirao Mastani",
+    "context": "Strong love",
+    "lines": [
+      "Ishq mein sirf jeet hoti hai.",
+      "Ya toh paana… ya phir mar jaana.",
+      "Beech ka kuch nahi hota."
+    ]
+  },
+  {
+    "movie": "Bajirao Mastani",
+    "context": "Power and pride",
+    "lines": [
+      "Hum woh nahi jo darr ke peeche hat jaaye.",
+      "Hum ladte hain… aur jeette hain.",
+      "Yahi humari pehchaan hai."
+    ]
+  },
+  {
+    "movie": "Jab We Met",
+    "context": "Playful teasing",
+    "lines": [
+      "Tum na bilkul stupid ho.",
+      "Par thode cute bhi ho.",
+      "Aur annoying toh bahut ho."
+    ]
+  },
+  {
+    "movie": "Dear Zindagi",
+    "context": "Therapy-like conversation",
+    "lines": [
+      "Why do you care so much?",
+      "What are you really afraid of?",
+      "Answer honestly."
+    ]
+  }
+]
