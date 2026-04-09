@@ -1,6 +1,7 @@
 import { useState } from "react";
 import prompts from "../data/prompts.json";
 import { getRandomItem } from "../utils/randomizer";
+import Timer from "./Timer";
 
 const emotions = ["all", "hurt", "guilt", "proud", "sad"];
 
@@ -50,6 +51,8 @@ export default function PromptCard() {
       <button onClick={generatePrompt} className="btn-primary">
         Generate New
       </button>
+
+      <Timer />
     </div>
   );
 }

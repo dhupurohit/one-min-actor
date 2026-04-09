@@ -1,6 +1,7 @@
 import { useState } from "react";
 import scripts from "../data/scripts.json";
 import { getRandomItem } from "../utils/randomizer";
+import Timer from "./Timer";
 
 export default function ScriptCard() {
   const movies = ["all", ...new Set(scripts.map((s) => s.movie))];
@@ -19,16 +20,13 @@ export default function ScriptCard() {
 
   return (
     <div className="card">
-
       {/* Movie Filter */}
       <div className="flex flex-wrap justify-center gap-2 mb-4">
         {movies.map((m) => (
           <button
             key={m}
             onClick={() => setSelectedMovie(m)}
-            className={`tag ${
-              selectedMovie === m ? "tag-active" : ""
-            }`}
+            className={`tag ${selectedMovie === m ? "tag-active" : ""}`}
           >
             {m}
           </button>
@@ -51,6 +49,7 @@ export default function ScriptCard() {
         New Scene
       </button>
 
+      <Timer />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import lines from "../data/lines.json";
 import { getRandomItem } from "../utils/randomizer";
+import Timer from "./Timer";
 
 const emotions = ["happy", "sad", "angry", "confused", "calm"];
 
@@ -10,18 +11,14 @@ export default function EmotionCard() {
 
   const toggleEmotion = (e) => {
     setSelected((prev) =>
-      prev.includes(e)
-        ? prev.filter((x) => x !== e)
-        : [...prev, e]
+      prev.includes(e) ? prev.filter((x) => x !== e) : [...prev, e],
     );
   };
 
-  const displayEmotions =
-    selected.length > 0 ? selected : emotions;
+  const displayEmotions = selected.length > 0 ? selected : emotions;
 
   return (
     <div className="card">
-
       <p className="label">LINE</p>
       <p className="text-line mb-4">“{line}”</p>
 
@@ -58,6 +55,7 @@ export default function EmotionCard() {
         New Line
       </button>
 
+      <Timer />
     </div>
   );
 }
