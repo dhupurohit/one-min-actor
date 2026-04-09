@@ -23,10 +23,10 @@ export default function Timer() {
   };
 
   return (
-    <div className="mt-4 text-center">
+    <div className="text-center space-y-3 mt-2">
       <p className="text-xl font-semibold">{time}s</p>
 
-      <div className="flex justify-center gap-2 mt-2">
+      <div className="flex justify-center gap-3">
         <button onClick={start} className="btn-primary">
           Start
         </button>

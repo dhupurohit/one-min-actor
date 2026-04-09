@@ -2,6 +2,7 @@ import { useState } from "react";
 import prompts from "../data/prompts.json";
 import { getRandomItem } from "../utils/randomizer";
 import Timer from "./Timer";
+import Recorder from "./Recorder";
 
 const emotions = ["all", "hurt", "guilt", "proud", "sad"];
 
@@ -20,8 +21,8 @@ export default function PromptCard() {
 
   return (
     <div className="card">
-      {/* Emotion Filter */}
-      <div className="flex flex-wrap justify-center gap-2 mb-4">
+      {/* Filter */}
+      <div className="flex flex-wrap justify-center gap-2">
         {emotions.map((e) => (
           <button
             key={e}
@@ -29,7 +30,7 @@ export default function PromptCard() {
               setSelectedEmotion(e);
               setTimeout(generatePrompt, 0);
             }}
-            className={`tag transition-all duration-200 ${
+            className={`tag transition-all ${
               selectedEmotion === e ? "tag-active" : ""
             }`}
           >
@@ -38,21 +39,34 @@ export default function PromptCard() {
         ))}
       </div>
 
-      {/* Content */}
-      <p className="label">SITUATION</p>
-      <p className="text-main">{prompt?.situation}</p>
+      {/* Situation */}
+      <div className="section">
+        <p className="label">SITUATION</p>
+        <p className="text-main">{prompt?.situation}</p>
+      </div>
 
-      <p className="label">EMOTION</p>
-      <p className="text-highlight">{prompt?.emotion}</p>
+      {/* Emotion */}
+      <div className="section">
+        <p className="label">EMOTION</p>
+        <p className="text-highlight">{prompt?.emotion}</p>
+      </div>
 
-      <p className="label">LINE</p>
-      <p className="text-line">“{prompt?.line}”</p>
+      {/* Line */}
+      <div className="section">
+        <p className="label">LINE</p>
+        <p className="text-line">“{prompt?.line}”</p>
+      </div>
 
+      {/* Button */}
       <button onClick={generatePrompt} className="btn-primary">
         Generate New
       </button>
 
-      <Timer />
+      {/* Timer + Recorder */}
+      <div className="section">
+        <Timer />
+        <Recorder />
+      </div>
     </div>
   );
 }

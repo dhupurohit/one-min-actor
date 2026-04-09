@@ -2,6 +2,7 @@ import { useState } from "react";
 import scripts from "../data/scripts.json";
 import { getRandomItem } from "../utils/randomizer";
 import Timer from "./Timer";
+import Recorder from "./Recorder";
 
 export default function ScriptCard() {
   const movies = ["all", ...new Set(scripts.map((s) => s.movie))];
@@ -20,24 +21,30 @@ export default function ScriptCard() {
 
   return (
     <div className="card">
+
       {/* Movie Filter */}
-      <div className="flex flex-wrap justify-center gap-2 mb-4">
+      <div className="flex flex-wrap justify-center gap-2">
         {movies.map((m) => (
           <button
             key={m}
             onClick={() => setSelectedMovie(m)}
-            className={`tag ${selectedMovie === m ? "tag-active" : ""}`}
+            className={`tag transition-all ${
+              selectedMovie === m ? "tag-active" : ""
+            }`}
           >
             {m}
           </button>
         ))}
       </div>
 
-      {/* Content */}
-      <p className="text-highlight">{script?.movie}</p>
-      <p className="label">{script?.context}</p>
+      {/* Movie Title */}
+      <div className="section">
+        <p className="text-highlight">{script?.movie}</p>
+        <p className="label">{script?.context}</p>
+      </div>
 
-      <div className="space-y-2 mt-3">
+      {/* Dialogue Lines */}
+      <div className="section space-y-2">
         {script?.lines.map((line, i) => (
           <p key={i} className="text-main">
             “{line}”
@@ -45,11 +52,17 @@ export default function ScriptCard() {
         ))}
       </div>
 
+      {/* Button */}
       <button onClick={generateScript} className="btn-primary">
         New Scene
       </button>
 
-      <Timer />
+      {/* Practice Tools */}
+      <div className="section">
+        <Timer />
+        <Recorder />
+      </div>
+
     </div>
   );
 }
